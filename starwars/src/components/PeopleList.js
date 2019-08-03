@@ -20,7 +20,7 @@ export default() => {
     return (
         <div>
         {person.map(item => {
-            return <PersonCard person={item.name}/>
+            return <PersonCard person={item.name} eye={item.eye_color}/>
         })}
         </div>
     );

@@ -1,11 +1,18 @@
 import React from 'react';
+import { Table } from "semantic-ui-react";
 
-export default function PersonCard({person}){
+export default function PersonCard({person, eye}){
     console.log(person)
     return (
-        <div>
-        <li>{person}</li>
-        </div>
+        <Table.Row>
+            <Table.Cell>
+                {person}
+            </Table.Cell>
+            <Table.Cell>
+                {eye}
+            </Table.Cell>
+        </Table.Row>
+
     )
 
 }

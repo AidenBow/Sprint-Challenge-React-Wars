@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { Table } from "semantic-ui-react";
+import 'semantic-ui-css/semantic.min.css'
 
 import PeopleList from './components/PeopleList'
 
@@ -14,7 +16,26 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <PeopleList />
+      <div style={{ maxWidth: 400}}>
+        <Table celled>
+
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell>
+                Name
+              </Table.HeaderCell>
+              <Table.HeaderCell>
+                Eye Color
+              </Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+
+          <Table.Body>
+            <PeopleList />
+          </Table.Body>
+
+        </Table>
+      </div>
     </div>
   );
 }
