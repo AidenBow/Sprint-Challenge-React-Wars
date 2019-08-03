@@ -9,4 +9,8 @@
 div {
   margin: 0 auto;
 }
+
+body {
+  background-image: url('./sw-bg.jpg');
+}
 /* write your parent styles in here for your App.js */
